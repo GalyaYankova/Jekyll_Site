@@ -11,14 +11,14 @@
 
 <body>
     <h1 class="site-title">
-        <a href="{{site.baseurl}}/{{site.pages}}"> {{site.title}} </a>
+        <a href="{{site.baseurl}}/"> {{site.title}} </a>
     </h1>
     <nav>
         <ul>
             {% for page in site.pages %}
             {% if page.title %}
             <li>
-                <a href="{{site.baseurl}}/">{{ site.title }}</a>
+                <a href="{{site.baseurl}} {{page.url}}">{{ site.title }}</a>
             </li>
             {% endif %}
             {% endfor %}
