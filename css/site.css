@@ -1,12 +1,15 @@
-@import url('typography.css');
-@import url('variables.css');
-
 html {
     background-image: linear-gradient(to right top, #c89fd1, #f996b9, #ff9988, #ffb051, #cad135);
     max-width: var(--layout-main-width);
     margin: 0 auto;
     padding: 2em;
     --color-text-main: #0000FF;
+}
+
+.site-header{
+    display: flex;
+    border-bottom: 1px solid var(--color-border-default);
+    margin-bottom: 2em;
 }
 
 ul{
@@ -24,7 +27,7 @@ ul>li>a{
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--color-text-main, #000);
 }
 
@@ -32,3 +35,8 @@ section{
     height: 550px;
 }
 
+footer{
+    border-top: 1px solid var(--color-border-default);
+    margin-top: 2em;
+    padding-top: calc( var (--spacing-layout-elements) / 2 );
+}
