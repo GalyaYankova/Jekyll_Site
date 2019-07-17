@@ -1,7 +1,12 @@
-body{
+@import url('typography.css');
+@import url('variables.css');
+
+.site {
     background-image: linear-gradient(to right top, #c89fd1, #f996b9, #ff9988, #ffb051, #cad135);
-    width: 75%;
-    margin: auto;
+    max-width: var(--layout-main-width);
+    margin: 0 auto;
+    padding: 2em;
+    --color-text-main: #0000FF;
 }
 
 ul{
@@ -20,6 +25,7 @@ ul>li>a{
 
 p{
     font-size: 1.8rem;
+    color: var(--color-text-main, #000);
 }
 
 section{
