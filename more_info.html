@@ -1,19 +1,20 @@
 ---
 layout: main
-title: More Info
-permalink: /more_info/
+title: Blog
+permalink: /blog/
 ---
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae asperiores ut earum, vitae blanditiis molestiae nobis
-    ratione voluptas aperiam sequi exercitationem voluptatem? Excepturi nostrum facilis, facere aperiam sequi debitis
-    reiciendis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae asperiores ut earum, vitae blanditiis molestiae nobis
-    ratione voluptas aperiam sequi exercitationem voluptatem? Excepturi nostrum facilis, facere aperiam sequi debitis
-    reiciendis.</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae asperiores ut earum, vitae blanditiis molestiae nobis
-    ratione voluptas aperiam sequi exercitationem voluptatem? Excepturi nostrum facilis, facere aperiam sequi debitis
-    reiciendis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae asperiores ut earum, vitae blanditiis molestiae nobis
-    ratione voluptas aperiam sequi exercitationem voluptatem? Excepturi nostrum facilis, facere aperiam sequi debitis
-    reiciendis.</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae asperiores ut earum, vitae blanditiis molestiae nobis
-    ratione voluptas aperiam sequi exercitationem voluptatem? Excepturi nostrum facilis, facere aperiam sequi debitis
-    reiciendis.</p>
+<section>
+    <header>
+        <h2>{{page.title}}</h2>
+    </header>
+    <div class="content">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{post.url}}">{{post.title}}</a>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+</section>
